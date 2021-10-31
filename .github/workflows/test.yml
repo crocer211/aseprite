@@ -66,3 +66,7 @@ jobs:
         git clone --branch $TESTS_BRANCH --recursive https://github.com/aseprite/tests.git
         cd tests
         $XVFB bash run-tests.sh
+- uses: actions/upload-artifact@v2
+  with:
+    name: my-artifact
+     path:
